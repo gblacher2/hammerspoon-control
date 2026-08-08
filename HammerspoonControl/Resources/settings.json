@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "warmth": {
+    "enabled": true,
+    "scheduleMode": "sunsetToSunrise",
+    "temperatureK": 4300,
+    "refreshIntervalSeconds": 60,
+    "displayDebounceSeconds": 2.0,
+    "fallbackLatitude": -23.5505,
+    "fallbackLongitude": -46.6333,
+    "builtInDisplayNames": [
+      "Built-in Retina Display",
+      "Color LCD",
+      "Liquid Retina XDR Display"
+    ]
+  },
+  "zoom": {
+    "enabled": true,
+    "minDelta": 0.08,
+    "debounceSeconds": 0.05,
+    "direction": "scrollUpZoomsIn"
+  }
+}

@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000012C50000100000001 /* HammerspoonControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000012C50000100000002 /* HammerspoonControlApp.swift */; };
+		A10000022C50000100000001 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000022C50000100000002 /* Settings.swift */; };
+		A10000032C50000100000001 /* InstallManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000032C50000100000002 /* InstallManifest.swift */; };
+		A10000042C50000100000001 /* IntegrationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000042C50000100000002 /* IntegrationState.swift */; };
+		A10000052C50000100000001 /* SystemDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000052C50000100000002 /* SystemDependency.swift */; };
+		A10000062C50000100000001 /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000062C50000100000002 /* FileManagerService.swift */; };
+		A10000072C50000100000001 /* ProcessRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000072C50000100000002 /* ProcessRunner.swift */; };
+		A10000082C50000100000001 /* IntegrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000082C50000100000002 /* IntegrationService.swift */; };
+		A1FF00012C50000100000001 /* AppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF00012C50000100000002 /* AppLog.swift */; };
+		A10000092C50000100000001 /* StatusBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000092C50000100000002 /* StatusBannerView.swift */; };
+		A100000A2C50000100000001 /* FirstRunInstallerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000A2C50000100000002 /* FirstRunInstallerView.swift */; };
+		A100000B2C50000100000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000B2C50000100000002 /* SettingsView.swift */; };
+		A100000C2C50000100000001 /* MenuBarExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000C2C50000100000002 /* MenuBarExtraView.swift */; };
+		A10000142C50000100000001 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000142C50000100000002 /* StatusModel.swift */; };
+		A10000152C50000100000001 /* StatusMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000152C50000100000002 /* StatusMonitor.swift */; };
+		A10000162C50000100000001 /* StatusDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000162C50000100000002 /* StatusDashboardView.swift */; };
+		A10000172C50000100000001 /* WarmthIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000172C50000100000002 /* WarmthIntents.swift */; };
+		A10000182C50000100000001 /* WarmthControlWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000182C50000100000002 /* WarmthControlWidget.swift */; };
+		A100000D2C50000100000001 /* settings.json in Resources */ = {isa = PBXBuildFile; fileRef = A100000D2C50000100000002 /* settings.json */; };
+		A100000E2C50000100000001 /* runtime.lua in Resources */ = {isa = PBXBuildFile; fileRef = A100000E2C50000100000002 /* runtime.lua */; };
+		A100000F2C50000100000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A100000F2C50000100000002 /* Assets.xcassets */; };
+		A100000F2C50000100000003 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A100000F2C50000100000004 /* AppIcon.icns */; };
+
+		A20000012C50000100000001 /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000012C50000100000002 /* SettingsTests.swift */; };
+		A20000022C50000100000001 /* FileManagerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000022C50000100000002 /* FileManagerServiceTests.swift */; };
+		A20000032C50000100000001 /* IntegrationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000032C50000100000002 /* IntegrationServiceTests.swift */; };
+		A20000042C50000100000001 /* ProcessRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000042C50000100000002 /* ProcessRunnerTests.swift */; };
+		A20000142C50000100000001 /* StatusMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000142C50000100000002 /* StatusMonitorTests.swift */; };
+		A20000182C50000100000001 /* WarmthIntentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000182C50000100000002 /* WarmthIntentsTests.swift */; };
+
+		/* Compile App source files into Test Target so XCTest can access internal types cleanly */
+		A20000052C50000100000001 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000022C50000100000002 /* Settings.swift */; };
+		A20000062C50000100000001 /* InstallManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000032C50000100000002 /* InstallManifest.swift */; };
+		A20000072C50000100000001 /* IntegrationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000042C50000100000002 /* IntegrationState.swift */; };
+		A20000152C50000100000001 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000142C50000100000002 /* StatusModel.swift */; };
+		A20000162C50000100000001 /* StatusMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000152C50000100000002 /* StatusMonitor.swift */; };
+		A20000172C50000100000001 /* StatusDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000162C50000100000002 /* StatusDashboardView.swift */; };
+		A20000192C50000100000001 /* WarmthIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000172C50000100000002 /* WarmthIntents.swift */; };
+		A200001A2C50000100000001 /* WarmthControlWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000182C50000100000002 /* WarmthControlWidget.swift */; };
+		A20000082C50000100000001 /* SystemDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000052C50000100000002 /* SystemDependency.swift */; };
+		A20000092C50000100000001 /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000062C50000100000002 /* FileManagerService.swift */; };
+		A200000A2C50000100000001 /* ProcessRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000072C50000100000002 /* ProcessRunner.swift */; };
+		A200000B2C50000100000001 /* IntegrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000082C50000100000002 /* IntegrationService.swift */; };
+		A2FF00012C50000100000001 /* AppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF00012C50000100000002 /* AppLog.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A20000102C50000100000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A10000002C50000100000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10000002C50000100000001;
+			remoteInfo = HammerspoonControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A10000002C50000100000002 /* HammerspoonControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HammerspoonControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000002C50000100000002 /* HammerspoonControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HammerspoonControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		A10000012C50000100000002 /* HammerspoonControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerspoonControlApp.swift; sourceTree = "<group>"; };
+		A10000022C50000100000002 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A10000032C50000100000002 /* InstallManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallManifest.swift; sourceTree = "<group>"; };
+		A10000042C50000100000002 /* IntegrationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationState.swift; sourceTree = "<group>"; };
+		A10000052C50000100000002 /* SystemDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemDependency.swift; sourceTree = "<group>"; };
+		A10000062C50000100000002 /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
+		A10000072C50000100000002 /* ProcessRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRunner.swift; sourceTree = "<group>"; };
+		A10000082C50000100000002 /* IntegrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationService.swift; sourceTree = "<group>"; };
+		A1FF00012C50000100000002 /* AppLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLog.swift; sourceTree = "<group>"; };
+		A10000092C50000100000002 /* StatusBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBannerView.swift; sourceTree = "<group>"; };
+		A100000A2C50000100000002 /* FirstRunInstallerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRunInstallerView.swift; sourceTree = "<group>"; };
+		A100000B2C50000100000002 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A100000C2C50000100000002 /* MenuBarExtraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarExtraView.swift; sourceTree = "<group>"; };
+		A10000142C50000100000002 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
+		A10000152C50000100000002 /* StatusMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMonitor.swift; sourceTree = "<group>"; };
+		A10000162C50000100000002 /* StatusDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDashboardView.swift; sourceTree = "<group>"; };
+		A10000172C50000100000002 /* WarmthIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmthIntents.swift; sourceTree = "<group>"; };
+		A10000182C50000100000002 /* WarmthControlWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmthControlWidget.swift; sourceTree = "<group>"; };
+		A100000D2C50000100000002 /* settings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = settings.json; sourceTree = "<group>"; };
+		A100000E2C50000100000002 /* runtime.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = runtime.lua; sourceTree = "<group>"; };
+		A100000F2C50000100000002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A100000F2C50000100000004 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+
+		A20000012C50000100000002 /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
+		A20000022C50000100000002 /* FileManagerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerServiceTests.swift; sourceTree = "<group>"; };
+		A20000032C50000100000002 /* IntegrationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationServiceTests.swift; sourceTree = "<group>"; };
+		A20000042C50000100000002 /* ProcessRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRunnerTests.swift; sourceTree = "<group>"; };
+		A20000142C50000100000002 /* StatusMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMonitorTests.swift; sourceTree = "<group>"; };
+		A20000182C50000100000002 /* WarmthIntentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmthIntentsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A10000002C50000100000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20000002C50000100000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A10000002C50000100000003 = {
+			isa = PBXGroup;
+			children = (
+				A10000002C50000100000005 /* HammerspoonControl */,
+				A20000002C50000100000005 /* HammerspoonControlTests */,
+				A10000002C50000100000006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000002C50000100000005 /* HammerspoonControl */ = {
+			isa = PBXGroup;
+			children = (
+				A10000102C50000100000001 /* App */,
+				A10000202C50000100000001 /* Models */,
+				A10000302C50000100000001 /* Services */,
+				A10000402C50000100000001 /* Views */,
+				A10000502C50000100000001 /* Resources */,
+			);
+			path = HammerspoonControl;
+			sourceTree = "<group>";
+		};
+		A10000102C50000100000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A10000012C50000100000002 /* HammerspoonControlApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A10000202C50000100000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A10000022C50000100000002 /* Settings.swift */,
+				A10000032C50000100000002 /* InstallManifest.swift */,
+				A10000042C50000100000002 /* IntegrationState.swift */,
+				A10000052C50000100000002 /* SystemDependency.swift */,
+				A10000142C50000100000002 /* StatusModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A10000302C50000100000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A10000062C50000100000002 /* FileManagerService.swift */,
+				A10000072C50000100000002 /* ProcessRunner.swift */,
+				A10000082C50000100000002 /* IntegrationService.swift */,
+				A1FF00012C50000100000002 /* AppLog.swift */,
+				A10000152C50000100000002 /* StatusMonitor.swift */,
+				A10000172C50000100000002 /* WarmthIntents.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A10000402C50000100000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A10000092C50000100000002 /* StatusBannerView.swift */,
+				A100000A2C50000100000002 /* FirstRunInstallerView.swift */,
+				A100000B2C50000100000002 /* SettingsView.swift */,
+				A100000C2C50000100000002 /* MenuBarExtraView.swift */,
+				A10000162C50000100000002 /* StatusDashboardView.swift */,
+				A10000182C50000100000002 /* WarmthControlWidget.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A10000502C50000100000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A100000D2C50000100000002 /* settings.json */,
+				A100000E2C50000100000002 /* runtime.lua */,
+				A100000F2C50000100000002 /* Assets.xcassets */,
+				A100000F2C50000100000004 /* AppIcon.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A20000002C50000100000005 /* HammerspoonControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				A20000012C50000100000002 /* SettingsTests.swift */,
+				A20000022C50000100000002 /* FileManagerServiceTests.swift */,
+				A20000032C50000100000002 /* IntegrationServiceTests.swift */,
+				A20000042C50000100000002 /* ProcessRunnerTests.swift */,
+				A20000142C50000100000002 /* StatusMonitorTests.swift */,
+				A20000182C50000100000002 /* WarmthIntentsTests.swift */,
+			);
+			path = HammerspoonControlTests;
+			sourceTree = "<group>";
+		};
+		A10000002C50000100000006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000002C50000100000002 /* HammerspoonControl.app */,
+				A20000002C50000100000002 /* HammerspoonControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10000002C50000100000001 /* HammerspoonControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000002C50000100000007 /* Build configuration list for PBXNativeTarget "HammerspoonControl" */;
+			buildPhases = (
+				A10000002C50000100000008 /* Sources */,
+				A10000002C50000100000004 /* Frameworks */,
+				A10000002C50000100000009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HammerspoonControl;
+			productName = HammerspoonControl;
+			productReference = A10000002C50000100000002 /* HammerspoonControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A20000002C50000100000001 /* HammerspoonControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A20000002C50000100000007 /* Build configuration list for PBXNativeTarget "HammerspoonControlTests" */;
+			buildPhases = (
+				A20000002C50000100000008 /* Sources */,
+				A20000002C50000100000004 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A20000102C50000100000002 /* PBXTargetDependency */,
+			);
+			name = HammerspoonControlTests;
+			productName = HammerspoonControlTests;
+			productReference = A20000002C50000100000002 /* HammerspoonControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000002C50000100000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A10000002C50000100000001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A20000002C50000100000001 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A10000002C50000100000001;
+					};
+				};
+			};
+			buildConfigurationList = A10000002C5000010000000A /* Build configuration list for PBXProject "HammerspoonControl" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A10000002C50000100000003;
+			productRefGroup = A10000002C50000100000006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10000002C50000100000001 /* HammerspoonControl */,
+				A20000002C50000100000001 /* HammerspoonControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A10000002C50000100000009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000D2C50000100000001 /* settings.json in Resources */,
+				A100000E2C50000100000001 /* runtime.lua in Resources */,
+				A100000F2C50000100000001 /* Assets.xcassets in Resources */,
+				A100000F2C50000100000003 /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10000002C50000100000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000012C50000100000001 /* HammerspoonControlApp.swift in Sources */,
+				A10000022C50000100000001 /* Settings.swift in Sources */,
+				A10000032C50000100000001 /* InstallManifest.swift in Sources */,
+				A10000042C50000100000001 /* IntegrationState.swift in Sources */,
+				A10000052C50000100000001 /* SystemDependency.swift in Sources */,
+				A10000062C50000100000001 /* FileManagerService.swift in Sources */,
+				A10000072C50000100000001 /* ProcessRunner.swift in Sources */,
+				A10000082C50000100000001 /* IntegrationService.swift in Sources */,
+				A1FF00012C50000100000001 /* AppLog.swift in Sources */,
+				A10000092C50000100000001 /* StatusBannerView.swift in Sources */,
+				A100000A2C50000100000001 /* FirstRunInstallerView.swift in Sources */,
+				A100000B2C50000100000001 /* SettingsView.swift in Sources */,
+				A100000C2C50000100000001 /* MenuBarExtraView.swift in Sources */,
+				A10000142C50000100000001 /* StatusModel.swift in Sources */,
+				A10000152C50000100000001 /* StatusMonitor.swift in Sources */,
+				A10000162C50000100000001 /* StatusDashboardView.swift in Sources */,
+				A10000172C50000100000001 /* WarmthIntents.swift in Sources */,
+				A10000182C50000100000001 /* WarmthControlWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20000002C50000100000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20000012C50000100000001 /* SettingsTests.swift in Sources */,
+				A20000022C50000100000001 /* FileManagerServiceTests.swift in Sources */,
+				A20000032C50000100000001 /* IntegrationServiceTests.swift in Sources */,
+				A20000042C50000100000001 /* ProcessRunnerTests.swift in Sources */,
+				A20000142C50000100000001 /* StatusMonitorTests.swift in Sources */,
+				A20000182C50000100000001 /* WarmthIntentsTests.swift in Sources */,
+				A20000052C50000100000001 /* Settings.swift in Sources */,
+				A20000062C50000100000001 /* InstallManifest.swift in Sources */,
+				A20000072C50000100000001 /* IntegrationState.swift in Sources */,
+				A20000082C50000100000001 /* SystemDependency.swift in Sources */,
+				A20000092C50000100000001 /* FileManagerService.swift in Sources */,
+				A200000A2C50000100000001 /* ProcessRunner.swift in Sources */,
+				A200000B2C50000100000001 /* IntegrationService.swift in Sources */,
+				A2FF00012C50000100000001 /* AppLog.swift in Sources */,
+				A20000152C50000100000001 /* StatusModel.swift in Sources */,
+				A20000162C50000100000001 /* StatusMonitor.swift in Sources */,
+				A20000172C50000100000001 /* StatusDashboardView.swift in Sources */,
+				A20000192C50000100000001 /* WarmthIntents.swift in Sources */,
+				A200001A2C50000100000001 /* WarmthControlWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A20000102C50000100000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10000002C50000100000001 /* HammerspoonControl */;
+			targetProxy = A20000102C50000100000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A10000002C5000010000000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A10000002C5000010000000C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A10000002C5000010000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HammerspoonControl/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielblacher.HammerspoonControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A10000002C5000010000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HammerspoonControl/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielblacher.HammerspoonControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A20000002C5000010000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielblacher.HammerspoonControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HammerspoonControl.app/Contents/MacOS/HammerspoonControl";
+			};
+			name = Debug;
+		};
+		A20000002C5000010000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielblacher.HammerspoonControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HammerspoonControl.app/Contents/MacOS/HammerspoonControl";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000002C5000010000000A /* Build configuration list for PBXProject "HammerspoonControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000002C5000010000000B /* Debug */,
+				A10000002C5000010000000C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000002C50000100000007 /* Build configuration list for PBXNativeTarget "HammerspoonControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000002C5000010000000D /* Debug */,
+				A10000002C5000010000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A20000002C50000100000007 /* Build configuration list for PBXNativeTarget "HammerspoonControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20000002C5000010000000D /* Debug */,
+				A20000002C5000010000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A10000002C50000100000000 /* Project object */;
+}
