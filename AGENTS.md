@@ -23,5 +23,4 @@ rg -n 'URLSession|NWConnection|Analytics|Telemetry|https?://|Documents/|Download
 ## Runtime (`runtime.lua`) API Guidelines
 
 - **Location API (`hs.location`)**: `hs.location.sunrise` and `hs.location.sunset` require separate numeric arguments `(latitude, longitude, offset)`. Never pass a location table `{latitude=..., longitude=...}` as argument 1, as it will return `nil`.
-- **Gamma Reset (`hs.screen:setGamma`)**: To restore default monitor color balance and ICC profile, call `screen:setGamma()` with no parameters. Do not pass `{red=1, green=1, blue=1}`, which sets a linear gamma ramp overlay instead of clearing the hardware gamma table.
-
+- **Gamma Reset (`hs.screen:setGamma`)**: `screen:setGamma` requires both `whitepoint` and `blackpoint` component tables. For an external-display-only neutral restore, use `{red=1, green=1, blue=1}` and `{red=0, green=0, blue=0}`; Hammerspoon reapplies the original gamma table it captured for that display. Do not pass empty tables (missing components become zero) or omit either argument. `hs.screen.restoreGamma()` restores ColorSync defaults globally, so do not use it inside the external-only loop.

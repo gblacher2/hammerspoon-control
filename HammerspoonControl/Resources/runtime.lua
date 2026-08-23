@@ -323,4 +323,3 @@ _G.hsControlSentinel = {
   generation = currentGen
 }
 print("Hammerspoon Control: Runtime initialized successfully, sentinel v1 published (gen: " .. currentGen .. ").")
-
