@@ -11,15 +11,23 @@ trap 'rm -rf "$TMP_DIR"' EXIT
 echo "[1/8] Setting up isolated fixture root at $TMP_DIR..."
 mkdir -p "$TMP_DIR/.hammerspoon"
 
-KNOWN_BASELINE_PATH="/Users/gabrielblacher/.hammerspoon/init.lua"
-KNOWN_BASELINE_SHA=$(shasum -a 256 "$KNOWN_BASELINE_PATH" | awk '{print $1}')
-echo "Known live baseline SHA: $KNOWN_BASELINE_SHA"
-
-cp "$KNOWN_BASELINE_PATH" "$TMP_DIR/.hammerspoon/init.lua"
+KNOWN_BASELINE_PATH="$HOME/.hammerspoon/init.lua"
+BASELINE_PRESENT=false
+KNOWN_BASELINE_SHA=""
+if [ -f "$KNOWN_BASELINE_PATH" ]; then
+    BASELINE_PRESENT=true
+    KNOWN_BASELINE_SHA=$(shasum -a 256 "$KNOWN_BASELINE_PATH" | awk '{print $1}')
+    echo "Known live baseline SHA: $KNOWN_BASELINE_SHA"
+    cp "$KNOWN_BASELINE_PATH" "$TMP_DIR/.hammerspoon/init.lua"
+else
+    echo "No live init.lua found; using an empty isolated fixture."
+    : > "$TMP_DIR/.hammerspoon/init.lua"
+fi
 
 echo "[2/8] Running swift test suite against isolated environment..."
 export HAMMERSPOON_CONTROL_CONFIG_DIR="$TMP_DIR/.hammerspoon"
-cd "/Users/gabrielblacher/GitHub & Coding Projects/hammerspoon-control"
+REPO_ROOT=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
+cd "$REPO_ROOT"
 
 xcodebuild -project HammerspoonControl.xcodeproj -scheme HammerspoonControlTests -configuration Debug -destination 'platform=macOS' -derivedDataPath /tmp/HammerspoonControlDerivedData CODE_SIGNING_ALLOWED=NO test > "$TMP_DIR/test_output.log" 2>&1
 
@@ -92,12 +100,21 @@ else
 fi
 
 echo "[9/9] Verifying absence of live home directory writes during safety tests..."
-LIVE_INIT_SHA=$(shasum -a 256 "$KNOWN_BASELINE_PATH" | awk '{print $1}')
-if [ "$LIVE_INIT_SHA" == "$KNOWN_BASELINE_SHA" ]; then
+if [ "$BASELINE_PRESENT" = true ]; then
+    LIVE_INIT_SHA=$(shasum -a 256 "$KNOWN_BASELINE_PATH" | awk '{print $1}')
+    if [ "$LIVE_INIT_SHA" != "$KNOWN_BASELINE_SHA" ]; then
+        echo "❌ Live ~/.hammerspoon/init.lua was modified during tests!"
+        exit 1
+    fi
+elif [ -e "$KNOWN_BASELINE_PATH" ]; then
+    echo "❌ Tests unexpectedly created live ~/.hammerspoon/init.lua!"
+    exit 1
+fi
+
+if [ "$BASELINE_PRESENT" = true ]; then
     echo "✔ Live ~/.hammerspoon/init.lua remained 100% untouched."
 else
-    echo "❌ Live ~/.hammerspoon/init.lua was modified during tests!"
-    exit 1
+    echo "✔ Live ~/.hammerspoon/init.lua remained absent."
 fi
 
 echo "============================================================"
